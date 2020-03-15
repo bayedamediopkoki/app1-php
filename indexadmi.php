@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="index.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="inde.css">
 </head>
-<body >
-
+<body class="body">
+  
 <form action="indexe.php" method="POST"> 
   <h1>Se Connecter en Admin</h1>
   <div class="gene">
@@ -26,6 +26,7 @@
 </div>
   
 </form>
+
 
 </body>
 </html>

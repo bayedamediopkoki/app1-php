@@ -3,7 +3,7 @@
 </head>
 <body>
 <div>
-  <form action="jouere.php" method="post">
+  <form action="admine.php" method="post">
       <h1> BI</h1>
     <label for="nom">NOM :</label>
     <input type="text" id="fname" name="firstname" placeholder="Entre votre nom svp..."><br>
@@ -19,6 +19,7 @@
                 if (!empty($_POST['prenom'])) {
                     $_SESSION['nom']=$nom['nom'];
                     $_SESSION['prenom']=$prenom['prenom'];
+                    header('location:admine.php');
                     
                 } 
                 else{

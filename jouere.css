@@ -9,7 +9,7 @@
   }
   
   input[type=text], select, textarea {
-    width: 99%;
+    width: 86% !important;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -28,22 +28,32 @@
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
-  
+  .div {
+    width: 40%;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+margin-left: 473px;
+}
+
   input[type=submit] {
     background-color: rgb(228, 243, 160);
     color: white;
-    padding: 12px 20px;
+    width: 20%;
+    padding: 20px 4px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-top: -200px;
     margin-left: 400px;
     margin-left: 525px;
+    
   }
   input[type=reset] {
     background-color: rgb(179, 185, 180);
     color: white;
-    padding: 12px 20px;
+    
+    padding: 4px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;

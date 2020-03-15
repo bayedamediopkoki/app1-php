@@ -5,7 +5,6 @@ $_SESSION['mod']= "diop";
 
 if (isset($_POST['login']) && isset($_POST['psw'])) {
     
-
     if(!empty($_POST['login'])){
         
         if(!empty($_POST['psw'])){

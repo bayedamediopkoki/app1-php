@@ -1,6 +1,7 @@
 <?php
 session_start();
-        $p=isset($_GET['p'])?$_GET['p']:'jouere1'
+// session_destroy();
+        $p=isset($_GET['p'])?$_GET['p']:'index'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,14 +9,15 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-<!-- <link rel="stylesheet" href="jouere">	 -->
-<!-- <link rel="stylesheet" href="jouere1.css"> -->
+    <link rel="stylesheet" href="inde.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="admine.css">
+    <link rel="stylesheet" href="menu.css">
 <?php if($p=="jouere" || $p=="app1" || $p=="app2"):?>
     <link rel="stylesheet" href="jouere.css">
 <?php endif;?>
 <?php if($p=="jouere1" || $p=="jouere1"):?>
-    <link rel="stylesheet" href="jouere1.css">
+    <link rel="stylesheet" href="jouere1.css">   
 <?php endif;?>
 </head>
 <body>
@@ -23,21 +25,28 @@ session_start();
         <nav class="nav">
             <ul>
                 <li>
-                    <a href="?p=exo1">exo1</a>
-                    <a href="?p=exo2">exo2</a>
-                    <a href="?p=exo3">exo3</a>
-                    <a href="?p=exo4">exo4</a>
-                    <a href="?p=exo5">exo5</a>
-                    <a href="?p=app1">app1</a>
-                    <a href="?p=app2">app2</a>
-                    <a href="?p=jouere1">conection</a>
+                    <a href="?p=exo1">EXO1</a>
+                    <a href="?p=exo2">EXO2</a>
+                    <a href="?p=exo3">EXO3</a>
+                    <a href="?p=exo4">EXO4</a>
+                    <a href="?p=exo5">EXO5</a>
+                    <a href="?p=app1">APPLI 1</a>
+                    <a href="?p=app2">APPLI 2</a>
+                    <a href="?jouere">JOUERE</a>
+                    <a href="indexadmi.php">ADMINE</a>
                     
                 </li>
             </ul>
         </nav>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
 <?php
-require_once("$p.php");
+    require_once("$p.php");
+    
 ?>
 </body>
 </html>

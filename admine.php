@@ -3,7 +3,7 @@
 require_once('function.php');
  session_start();
 //session_destroy();
- var_dump($_SESSION);
+ //var_dump($_SESSION);
  if(!empty($_POST)){
  //$questions=isset($_SESSION['qustion'])?json_decode( $_SESSION['qustion']) :array();
  if (isset($_SESSION['question']) ){
@@ -43,6 +43,7 @@ require_once('function.php');
 <link rel="stylesheet" href="admine.css">
 </head>
 <body>
+  <H1>BIENVENUE DIOP KOKI SUR LA PLATFORME D'EDITION QUESTIONNAIRES</H1>
 <div class="container">
   <form action="" method="POST" >
   <div class="row">
@@ -151,7 +152,7 @@ require_once('function.php');
                newInput2.setAttribute('name','vrais');
                newInput2.setAttribute('value',index-1);
                newInput.setAttribute('placeholder', 'REPONSE'+ index);
-               newInput.style.width="85%";
+               newInput.style.width="100%";
                newInput2.style.width="10%";
                newInput.addEventListener('change',function(e){
                  newInput2.value=e.target.value;
@@ -166,8 +167,6 @@ require_once('function.php');
               }
             }
             
-           </script>   
-    
-    
+           </script>     
 </body>
 </html>
