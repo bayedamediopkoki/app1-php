@@ -34,12 +34,6 @@ tr:nth-child(even) {background-color: #f2f2f2;}
  <form action="" method="POST">
  <button name="fr" class="btn">FRANCAIS</button>
    <button name="en" class="btn">ANGLAIS</button>
-   <option value=""></option>
-   <select name="selecte" id="select" onchange="myFunction()">
-     <option value="fr" >FRANCAIS</option>
-     <option value="en" >ANGLAIS</option>
-
-   </select>
 
  </form>
 
