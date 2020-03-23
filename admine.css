@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
   input[type=text], select, textarea {
-    width: 100%;
+    width: 60% !important;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -33,13 +33,12 @@
    
   }
   input[type=text] {
-    width: 40px;
-    
+    width: 50% !important;
     height: 40px;
     border: 1px solid #ccc;
-    
+
     resize: vertical;
-   
+
   }
   input[type=radio]{
     width: 40px;

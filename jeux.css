@@ -1,0 +1,27 @@
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 150px;
+  }
+input[type=text] {
+    width: 90%;
+    height: 60PX; 
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 44%;
+    position: absolute;
+    margin-left: 400px;
+  }

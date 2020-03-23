@@ -43,6 +43,7 @@ require_once('function.php');
 <link rel="stylesheet" href="admine.css">
 </head>
 <body>
+
   <H1>BIENVENUE DIOP KOKI SUR LA PLATFORME D'EDITION QUESTIONNAIRES</H1>
 <div class="container">
   <form action="" method="POST" >

@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="inde.css">
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
     <link rel="stylesheet" href="admine.css">
     <link rel="stylesheet" href="menu.css">
 <?php if($p=="jouere" || $p=="app1" || $p=="app2"):?>
@@ -32,7 +32,7 @@ session_start();
                     <a href="?p=exo5">EXO5</a>
                     <a href="?p=app1">APPLI 1</a>
                     <a href="?p=app2">APPLI 2</a>
-                    <a href="?jouere">JOUERE</a>
+                    <!-- <a href="jeux.php">JOUERE</a> -->
                     <a href="indexadmi.php">ADMINE</a>
                     
                 </li>

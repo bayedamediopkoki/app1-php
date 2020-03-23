@@ -10,6 +10,19 @@ function premiere($n){
     }
    return $ok;
 }
+function moyenne(array $tab)
+{
+    $somme = 0;
+    $moyenne = 0;
+    $i = 0;
+    foreach ($tab as $key => $value) {
+        $somme += $value;
+        $i = $key;
+    }
+    $i++;
+    $moyenne += $somme / $i;
+    return $moyenne;
+}
 //functiom de recherche
 function recherche ($t){
   
@@ -111,4 +124,35 @@ function myStrlen(string $chaine){
         $i++;
     }
     return $i;
+}
+function pagination($tab, $nombreParPage,$page,$taille)
+{
+    $_SESSION['nombreTotal'] = $taille;
+    $_SESSION['pageTotal'] = ceil($_SESSION['nombreTotal'] / $nombreParPage);
+    if (isset($_GET[$page]) && $_GET[$page] > 0) // Si la variable $_GET['page'] existe... et ne contient que des chiffre
+    {
+        $_GET[$page] = intval($_GET[$page]);
+        $_SESSION['pageCourant'] = $_GET[$page];  // page courant prend la page actuelle 
+    } else {
+        $_SESSION['pageCourant'] = 1;  // si non  elle prend 1
+    }
+    $_SESSION['debut'] = ($_SESSION['pageCourant'] - 1) * $nombreParPage; // de but de l'achiffage par page 
+    echo '<br>';
+    echo '<table class=affichePremier>';
+    for ($i = $_SESSION['debut']; $i < $nombreParPage * $_SESSION['pageCourant']; $i += 10) {
+        echo '<tr>';
+        for ($j = $i; ($j < $i + 10 && $j < $taille); $j++) {
+            echo '<td>' . $tab[$j] . '</td>';
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+    for ($i = 1; $i <= $_SESSION['pageTotal']; $i++) {
+        if ($i == $_SESSION['pageCourant']) {
+            echo ' <div class=" pagactive">' . $i . ' </div>';
+        } else {
+            echo ' <div class="paginationCenter"><a  href="navbar.php?'.$page.'=' . $i . '"> <div class="pagination">' . $i . ' </div></a> </div> ';
+        }
+    }
+    echo '<br> <br> <br>';
 }

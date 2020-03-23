@@ -6,7 +6,6 @@ table {
   margin-left: 400px;
   margin-top:50px;
 }
-
 th, td {
   text-align: left;
   padding: 30px;
@@ -17,25 +16,30 @@ tr:nth-child(even){background-color: #f2f2f2}
 th {
   background-color: #4CAF50;
   color: white;
+  text-align: center;
 }
 .btn{
-        width:100px;
-        height: 30px;
+        width:120px;
+        height: 59px;
+       font-size: 15px;
         margin-left: 100px;
-  margin-top:50px;
-  background-color: green;
-        
+        margin-top:50px;
+        background-color: green; 
+        float:left;     
 }
 
 tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
 
-
-
-   
  <form action="" method="POST">
  <button name="fr" class="btn">FRANCAIS</button>
    <button name="en" class="btn">ANGLAIS</button>
+   <option value=""></option>
+   <select name="selecte" id="select" onchange="myFunction()">
+     <option value="fr" >FRANCAIS</option>
+     <option value="en" >ANGLAIS</option>
+
+   </select>
 
  </form>
 
@@ -71,8 +75,8 @@ if (!empty($_POST)) {
           echo "</tr>";
      }
      echo "</table>";       
-       }       
-                 
-                 
-            }          
+       }            
+            }   
+              
          ?>
+        

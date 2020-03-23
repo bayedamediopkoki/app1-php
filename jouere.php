@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+// var_dump($_SESSION['donne']);
 $index=isset($_GET['page'])?$_GET['page']:1;
 $score=0;
 if(isset($_SESSION['score'])){
@@ -36,6 +38,7 @@ if(!empty($_POST)){
 $question= $_SESSION['question'][$index-1];
 $type=$question['type'];
 //var_dump($question);
+   echo "vous avez $score ";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +64,8 @@ $type=$question['type'];
 <body>
 <!-- <h1>Bienvenue <?php echo $_SESSION['prenom']." ".$_SESSION['nom']; ?></h1> -->
 <H1 style=" background-color: green; color:#fff;  width: 60%; margin-left:300px;" >
-    BIENVENUE SUR LA PLATFORME DE REPONSE AUX QCM
+
+    BIENVENUE <?php echo $_SESSION['prenom']." ".$_SESSION['nom']; ?>SUR LA PLATFORME DE REPONSE AUX QCM
     </H1> 
     <div>
     <form action="?page=<?=$index+1?>" method="POST">

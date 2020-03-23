@@ -18,7 +18,7 @@ if (!empty($_POST)) {
     } 
 }
 ?>
-<?php
+<?php 
       $color =array(
          'black',
          'red',
