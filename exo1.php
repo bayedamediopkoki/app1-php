@@ -8,6 +8,9 @@
 
     require_once('function.php');
     sleep(1);
+  //   $c="c";
+  //  $alp= alphbetique($c);
+  //  var_dump($alp);
     $cpt=0;
     $pageCourant;
     $_SESSION['nombreParPage'] = 10;
